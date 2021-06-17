@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>JavaWeb_task8</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <filter>
+  	<filter-name>SubmitFilter</filter-name>
+  	<filter-class>com.kalzn.filter.BadWordFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>SubmitFilter</filter-name>
+  	<url-pattern>/Submit/*</url-pattern>
+  </filter-mapping>
+  
+  <servlet>
+  	<servlet-name>MessageDeal</servlet-name>
+  	<servlet-class>com.kalzn.servlet.MessageDeal</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>MessageDeal</servlet-name>
+  	<url-pattern>/Submit/MessageDeal</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>ReplyDeal</servlet-name>
+  	<servlet-class>com.kalzn.servlet.ReplyDeal</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>ReplyDeal</servlet-name>
+  	<url-pattern>/Submit/ReplyDeal</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>LoginDeal</servlet-name>
+  	<servlet-class>com.kalzn.servlet.LoginDeal</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>LoginDeal</servlet-name>
+  	<url-pattern>/Admin/LoginDeal</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>LogoutDeal</servlet-name>
+  	<servlet-class>com.kalzn.servlet.LogoutDeal</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>LogoutDeal</servlet-name>
+  	<url-pattern>/Admin/LogoutDeal</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>SignupDeal</servlet-name>
+  	<servlet-class>com.kalzn.servlet.SignupDeal</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>SignupDeal</servlet-name>
+  	<url-pattern>/Admin/SignupDeal</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>DeleteMessageDeal</servlet-name>
+  	<servlet-class>com.kalzn.servlet.DeleteMessageDeal</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>DeleteMessageDeal</servlet-name>
+  	<url-pattern>/Admin/DeleteMessageDeal</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>DeleteReplyDeal</servlet-name>
+  	<servlet-class>com.kalzn.servlet.DeleteReplyDeal</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>DeleteReplyDeal</servlet-name>
+  	<url-pattern>/Admin/DeleteReplyDeal</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>DeleteBadWordDeal</servlet-name>
+  	<servlet-class>com.kalzn.servlet.DeleteBadWordDeal</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>DeleteBadWordDeal</servlet-name>
+  	<url-pattern>/Admin/DeleteBadWordDeal</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>AddBadWordDeal</servlet-name>
+  	<servlet-class>com.kalzn.servlet.AddBadWordDeal</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>AddBadWordDeal</servlet-name>
+  	<url-pattern>/Admin/AddBadWordDeal</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>CheckDeal</servlet-name>
+  	<servlet-class>com.kalzn.servlet.CheckDeal</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>CheckDeal</servlet-name>
+  	<url-pattern>/Admin/CheckDeal</url-pattern>
+  </servlet-mapping>
+</web-app>
