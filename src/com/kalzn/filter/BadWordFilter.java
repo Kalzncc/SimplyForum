@@ -8,6 +8,8 @@ import javax.servlet.FilterConfig;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
+
+ 
 import javax.servlet.annotation.WebFilter;
 
 import com.kalzn.bean.BadWord;
@@ -20,11 +22,11 @@ import java.util.*;
  * Servlet Filter implementation class BadWordFilter
  */
 /**
- * 敏感词过滤器。
- * 过滤器从数据库的敏感词表中获取数据，然后匹配检索用户试图发布的内容，如果
- * 发现屏蔽词，则将其替换为*
+ * 鏁忔劅璇嶈繃婊ゅ櫒銆�
+ * 杩囨护鍣ㄤ粠鏁版嵁搴撶殑鏁忔劅璇嶈〃涓幏鍙栨暟鎹紝鐒跺悗鍖归厤妫�绱㈢敤鎴疯瘯鍥惧彂甯冪殑鍐呭锛屽鏋�
+ * 鍙戠幇灞忚斀璇嶏紝鍒欏皢鍏舵浛鎹负*
  * 
- * @author Kalzn 18软件02 马明皓
+ * @author Kalzn 18杞欢02 椹槑鐨�
  *
  */
 @WebFilter("/BadWordFilter")
