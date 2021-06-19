@@ -27,3 +27,5 @@
 4) 编辑过滤词
 
 ![image](https://user-images.githubusercontent.com/44296812/122385355-489e0f80-cf9f-11eb-80ca-986f1cd7940f.png)
+
+使用前，请先创建数据库，mysql代码已包含在sql文件夹中，并将com.kalzn.dbcon.impl.MysqlServerCon中的数据库链接地址更改。
